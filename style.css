@@ -1,0 +1,134 @@
+:root {
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+    height: 100vh;
+    font-family: Montserrat ,sans-serif;
+}
+section {
+    max-width: 100%;
+    width: 375px;
+    background-color: var(--White);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+img {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.article {
+    padding: 1.5rem;
+}
+.article h3 {
+    color: var(--Dark-grayish-blue);
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.article h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 1rem 0;
+    color: var(--Very-dark-blue);
+    font-family: Fraunces, sans-serif;
+    font-weight: 700;
+}
+.article p {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;  
+}
+.value {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: Fraunces, sans-serif;
+}
+.value h4 {
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    font-weight: 700;
+}
+.value span {
+    font-size: 14px;
+    text-decoration: line-through;
+    text-decoration-color: var(--Dark-grayish-blue);
+    color: var(--Dark-grayish-blue);
+    
+}
+.btn {
+    padding: 1rem;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    border-radius: 1rem;
+}
+.btn img {
+    border-radius: 0;
+}
+.btn p {
+    color: var(--White);
+    font-weight: 700;
+}
+.btn:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+    color: var(--Dark-grayish-blue);
+    font-family: Fraunces, sans-serif;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: var(--Dark-cyan);
+   text-decoration: underline;
+}
+@media screen and (min-width:768px) {
+    section {
+        display: flex;
+        width: 600px;
+        max-width: 100%;
+    }
+    img {
+        object-fit: cover;
+        height: 100%;
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .btn img {
+        border-radius: 0;
+    }
+}
