@@ -38,6 +38,9 @@ img {
     max-width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
+#desktop {
+    display: none;
+}
 .article {
     padding: 1.5rem;
 }
@@ -125,6 +128,18 @@ img {
         border-radius: 0;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
+    }
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+    .image {
+        width: 50%;
+    }
+    .article {
+        width: 50%;
     }
     .btn img {
         border-radius: 0;
