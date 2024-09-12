@@ -103,10 +103,11 @@ img {
     cursor: pointer;
 }
 .attribution { 
-    font-size: 1rem; 
+    font-size: 14px; 
     text-align: center; 
     color: var(--Dark-grayish-blue);
     font-family: Fraunces, sans-serif;
+    margin-top: -1rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
